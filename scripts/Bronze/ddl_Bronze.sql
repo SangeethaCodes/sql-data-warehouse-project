@@ -60,3 +60,12 @@ Create table Bronze.erp_cust_az12 (
 	bdate date,
 	gen nvarchar(50)
 );
+
+If object_id('Bronze.erp_px_cat_g1v2','U') is not null
+	drop table Bronze.erp_px_cat_g1v2;
+Create table Bronze.erp_px_cat_g1v2 (
+	id nvarchar(50),
+	cat nvarchar(50),
+	subcat nvarchar(50),
+	maintenance nvarchar(50)
+);
